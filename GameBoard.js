@@ -47,7 +47,7 @@ export default class GameBoard {
     this.grid[position].classList.remove(...classes)
   }
 
-  isObjectExist(position, object) {
+  isObjectExist = (position, object) => {
     return this.grid[position].classList.contains(object);
   }
 
